@@ -2,9 +2,9 @@ package lista01;
 
 import java.util.Scanner;
 
-public class Ex12 {
-	public static void main(String[] args) {
+public class Ex14 {
 
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite o nome do funcionário: ");
 		String nome = sc.nextLine();
@@ -13,10 +13,12 @@ public class Ex12 {
 		Double salarioBruto = sc.nextDouble();
 
 		System.out.println("Digite o percentual de desconto: ");
-		Double percentualDesconto = sc.nextDouble();
+		Double percentualAcrescimo = sc.nextDouble();
 
-		Double salarioLiquido = salarioBruto - (salarioBruto * (percentualDesconto / 100));
+		Double salarioLiquido = salarioBruto + (salarioBruto * (percentualAcrescimo / 100));
 
 		System.out.println("Nome: " + nome + " |Salário bruto: " + salarioBruto + " |Salário líquido: " + salarioLiquido);
+
 	}
+
 }
