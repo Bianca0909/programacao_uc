@@ -13,17 +13,17 @@ public class Ex03 {
 
 		double nota1;
 		do {
-			
+
 			System.out.println("Digite o nome do aluno: ");
 			String nome = sc.next();
 
 			System.out.println("Digite a nota 1: ");
 			nota1 = sc.nextDouble();
-			
+
 			if (nota1 == -3) {
 				System.exit(0);
 			}
-			
+
 			System.out.println("Digite a nota 2: ");
 			double nota2 = sc.nextDouble();
 
