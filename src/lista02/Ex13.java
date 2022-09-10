@@ -1,5 +1,7 @@
 package lista02;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Ex13 {
@@ -31,6 +33,9 @@ public class Ex13 {
         	salarioAReceber = salario + (salario * 0.5);
         }
      
-        System.out.println("Nome: " + nome + " |Categoria: " + categoria + " |Salário a receber: " + salarioAReceber);
+    	Locale brazil = new Locale("pt", "BR");
+		NumberFormat currency = NumberFormat.getCurrencyInstance(brazil);
+		
+        System.out.println("Nome: " + nome + " |Categoria: " + categoria + " |Salário a receber: " + currency.format(salarioAReceber));
 	}
 }

@@ -1,5 +1,7 @@
 package lista02;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Ex15 {
@@ -30,8 +32,10 @@ public class Ex15 {
 			salarioLiquido = salario + (salario * 0.15);
 		}
 		
+		Locale brazil = new Locale("pt", "BR");
+		NumberFormat currency = NumberFormat.getCurrencyInstance(brazil);
 		
-		System.out.println("Nome: " + nome + " |Salário bruto: " + salario + " |Tempo de serviço: " + anos + " |Salário líquido: " + salarioLiquido);
+		System.out.println("Nome: " + nome + " |Salário bruto: " + currency.format(salario) + " |Tempo de serviço: " + anos + " |Salário líquido: " + currency.format(salarioLiquido));
 	}
 
 }

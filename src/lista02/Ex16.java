@@ -1,5 +1,7 @@
 package lista02;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Ex16 {
@@ -28,8 +30,10 @@ public class Ex16 {
 		} else if (categoria.equalsIgnoreCase("B") && precoProduto <= 50) {
 			precoComDesconto = precoProduto - (precoProduto * 0.12);
 		}
-
-		System.out.println("Produto: " + nome + " |Total a pagar: " + precoComDesconto);
+		Locale brazil = new Locale("pt", "BR");
+		NumberFormat currency = NumberFormat.getCurrencyInstance(brazil);
+		
+		System.out.println("Produto: " + nome + " |Total a pagar: " + currency.format(precoComDesconto));
 	}
 
 }
