@@ -19,7 +19,7 @@ public class Ex27 {
 		
 		Double mediaSimles = (notaAv01 + notaAv02 + notaAv03)/3;
 		
-		Double media = (notaAv01 + notaAv02 + notaAv03 + mediaSimles)/7;
+		Double media = (notaAv01 + notaAv02*2 + notaAv03*3 + mediaSimles)/7;
 		
 		String conceito = "";
 		if (media > 9 && media <=10) {
