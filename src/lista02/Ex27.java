@@ -40,5 +40,6 @@ public class Ex27 {
 			System.out.println("Reprovado");
 		}
 	}
+	
 
 }
