@@ -18,9 +18,9 @@ public class Ex04 {
 
 		Integer idade = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade: "));
 
-		Double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite seu peso"));
+		Double peso = Double.parseDouble(JOptionPane.showInputDialog("Digite seu peso: "));
 
-		Double altura = Double.parseDouble(JOptionPane.showInputDialog("Digite sua altura"));
+		Double altura = Double.parseDouble(JOptionPane.showInputDialog("Digite sua altura: "));
 
 		Double imc = peso / (altura * altura);
 		String situacao = "";
