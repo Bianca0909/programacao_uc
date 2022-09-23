@@ -48,16 +48,20 @@ public class Ex04 {
 		String consumoCigarro = "";
 		String consumoBebidas = "";
 
-		if (praticaExercicios == 0 || consomeBebidasAlcoolicas == 0 || fumante == 0) {
+		if (praticaExercicios == 0) {
 			praticaDeExercicios = "Sim";
+		} if (fumante == 0) {
 			consumoCigarro = "Sim";
+		} if (consomeBebidasAlcoolicas == 0) {
 			consumoBebidas = "Sim";
-		}
-		if (praticaExercicios == 1 || consomeBebidasAlcoolicas == 1 || fumante == 1) {
-			praticaDeExercicios = "Não";
-			consumoCigarro = "Não";
+		}  if (consomeBebidasAlcoolicas == 1) {
 			consumoBebidas = "Não";
-		}
+		} if (praticaExercicios == 1) {
+			praticaDeExercicios = "Não";
+		} if (fumante == 1) {
+			consumoCigarro = "Não";
+		} 
+	
 
 		System.out.println("|Nome: " + nome + " \n|Apelido: " + apelido + " \n|Idade: " + idade + " \n|Peso: " + peso
 				+ " \n|Altura: " + altura + " \n|Situação: " + situacao + " \n|É fumante? " + consumoCigarro
